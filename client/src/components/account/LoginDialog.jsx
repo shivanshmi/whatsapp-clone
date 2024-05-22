@@ -42,12 +42,13 @@ const Title = styled(Typography)`
 
 const ModifiedList = styled(List)`
   & > li {
-    padding: 0,
-    margin-top: 15px;
-    font-size: 18px;
-    line-height: 28px;
-    color: #4a4a4a;
-  }
+  height: "95%",
+
+  width: "100%",
+  margin: "20px",
+  maxWidth: "100%",
+  borderRadius: 0
+}
 `;
 
 const LoginDialog = () => {
