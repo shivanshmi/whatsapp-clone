@@ -3,18 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/compat-data": "7.19.4",
+    "@babel/core": "7.19.6",
+    "@babel/generator": "7.19.6",
+    "@babel/helper-compilation-targets": "7.19.3",
+    "@babel/helper-create-class-features-plugin": "7.19.0",
+    "@babel/helper-module-transforms": "7.19.6",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.15.18",
+    "@react-oauth/google": "^0.12.1",
+    "jwt-decode": "^4.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scripts": "^4.0.3",
-    "@babel/core": "7.19.6",
-    "@babel/generator": "7.19.6",
-    "@babel/compat-data": "7.19.4",
-    "@babel/helper-compilation-targets": "7.19.3",
-    "@babel/helper-create-class-features-plugin": "7.19.0",
-    "@babel/helper-module-transforms": "7.19.6"
+    "react-scripts": "^4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
