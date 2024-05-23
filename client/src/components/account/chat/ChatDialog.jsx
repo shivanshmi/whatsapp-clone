@@ -1,9 +1,10 @@
 import { Dialog, styled } from "@mui/material";
 
-import { Box } from "@mui/system";
+import { Box } from "@mui/material";
 
 import Menu from "./menu/Menu";
-import EmptyChat from "./chat-app/EmptyChat.jsx";
+
+import EmptyChat from "./chat-app/EmptyChat";
 
 const modifiedDialog = {
   height: "95%",

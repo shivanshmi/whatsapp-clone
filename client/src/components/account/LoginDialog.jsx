@@ -5,9 +5,8 @@ import { qrCodeImage } from "../../constants/data";
 
 import { GoogleLogin, GoogleOAuthProvider } from "@react-oauth/google";
 import { jwtDecode } from "jwt-decode";
-import { useContext } from "react";
 import { AccountContext } from "../context/AccountProvider";
-
+import { useContext } from "react";
 const Component = styled(Box)`
   display: flex;
 `;
@@ -42,17 +41,17 @@ const Title = styled(Typography)`
 
 const ModifiedList = styled(List)`
   & > li {
-  height: "95%",
-
-  width: "100%",
-  margin: "20px",
-  maxWidth: "100%",
-  borderRadius: 0
-}
+    padding: 0,
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #4a4a4a;
+  }
 `;
 
 const LoginDialog = () => {
   const { setAccount } = useContext(AccountContext);
+
   const onLoginSuccess = (res) => {
     const decoded = jwtDecode(res.credential);
 

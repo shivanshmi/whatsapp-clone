@@ -11,7 +11,6 @@ const AccountProvider = ({ children }) => {
     <AccountContext.Provider
       value={{
         account,
-
         setAccount,
       }}
     >
