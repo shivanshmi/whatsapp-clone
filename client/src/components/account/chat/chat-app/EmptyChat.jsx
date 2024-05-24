@@ -1,10 +1,10 @@
-import { Box, styled, Typography } from "@mui/material";
+import { Box, styled, Typography, Divider } from "@mui/material";
 import { emptyChatImage } from "../../../../constants/data";
 const Component = styled(Box)`
   background: #f8f9fa;
   padding: 30px 0;
   text-align: center;
-  height: 100%;
+  height: 100vh;
 `;
 
 const Container = styled(Box)`
@@ -31,6 +31,11 @@ const SubTitle = styled(Typography)`
   font-family: inherit;
 `;
 
+const ModifiedDivider = styled(Divider)`
+  margin: 40px 0;
+  opacity: 0.4;
+`;
+
 const EmptyChat = () => {
   return (
     <Component>
@@ -44,6 +49,7 @@ const EmptyChat = () => {
         <SubTitle>
           Use WhatsApp on up to 4 linked devices and 1 phone at the same time{" "}
         </SubTitle>
+        <ModifiedDivider />
       </Container>
     </Component>
   );
